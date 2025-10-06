@@ -1,0 +1,69 @@
+RewriteEngine On
+Options All -Indexes
+
+<FilesMatch "base_connection.php">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "base_functions.php">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "base.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "generate_stars.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "conversao.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "exoplanet_model_single_file.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "futuro_en.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "futuro_pt.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "informacoes_en.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "informacoes_pt.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "nandibot_.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "nandibot.sql">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "translates.sql">
+Deny from all
+</FilesMatch>
+
+#<FilesMatch "base_connection.php">
+#Order allow,deny
+#allow from 192.168.43.21
+#</FilesMatch>
+
+<FilesMatch ".htaccess">
+Deny from all
+</FilesMatch>
+
+ErrorDocument 400 /erro/?code=400
+ErrorDocument 401 /erro/?code=401
+ErrorDocument 403 /erro/?code=403
+ErrorDocument 404 /erro/?code=404
+ErrorDocument 500 /erro/?code=500
