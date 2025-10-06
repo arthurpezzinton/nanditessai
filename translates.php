@@ -1,5 +1,5 @@
 <?php
-$default_language = "pt";
+$default_language = "en";
 function get_language_cookie(){
     $language = $GLOBALS['default_language'];
     if(isset($_COOKIE[$GLOBALS['language_cookie']])) $language = $_COOKIE[$GLOBALS['language_cookie']];
